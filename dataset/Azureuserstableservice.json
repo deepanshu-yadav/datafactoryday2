@@ -1,0 +1,16 @@
+{
+	"name": "Azureuserstableservice",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "deepanshusqlinsertservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "AzureSqlTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "Users"
+		}
+	}
+}
