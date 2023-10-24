@@ -1,0 +1,26 @@
+{
+	"name": "synapsedeepanshubulk",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "deepanshusynapseservice",
+			"type": "LinkedServiceReference"
+		},
+		"parameters": {
+			"DWSchema": {
+				"type": "String",
+				"defaultValue": "@dataset().DWSchema"
+			},
+			"DWTAbleName": {
+				"type": "String",
+				"defaultValue": "@dataset().DWTableName"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDWTable",
+		"schema": [],
+		"typeProperties": {
+			"schema": "dbo",
+			"table": "synapsebulktable"
+		}
+	}
+}
